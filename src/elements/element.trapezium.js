@@ -153,6 +153,13 @@ module.exports = function(Chart) {
 			return mouseX >= vm.x - maxWidth / 2 && mouseX <= vm.x + maxWidth / 2;
 
 		},
+		getCenterPoint: function () {
+			const { x, y} = this._view;
+			return {
+				x,
+				y
+			};
+		},
 		tooltipPosition: function () {
 			var vm = this._view;
 			return {
